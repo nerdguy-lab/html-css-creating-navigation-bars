@@ -12,22 +12,8 @@ body {
     font-size: 1.2rem;
 }
 
-* {
-    border: 1px solid red;
-}
-
-nav {
-    border: 5px solid blue;
-}
-
-ul {
-    border: 2px solid black;
-}
-
-li {
-    border: 2px dotted green;
-}
-
-a {
-    background-color: yellow;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
