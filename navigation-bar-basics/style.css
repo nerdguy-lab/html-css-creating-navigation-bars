@@ -1,0 +1,33 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+* {
+    border: 1px solid red;
+}
+
+nav {
+    border: 5px solid blue;
+}
+
+ul {
+    border: 2px solid black;
+}
+
+li {
+    border: 2px dotted green;
+}
+
+a {
+    background-color: yellow;
+}
