@@ -16,6 +16,7 @@ nav {
     border: 1px solid #333;
     width: 50%;
     margin: 1rem auto;
+    background-image: url(../img/lil-graydots.png);
 }
 
 nav ul {
@@ -43,6 +44,7 @@ nav a:focus {
 nav a:hover {
     color: #ff583d;
     background-color: #f0c808;
+    background-image: url(../img/lil-yellowdots.webp);
 }
 
 .active {
@@ -50,4 +52,5 @@ nav a:hover {
     background-color: #c5e5ed;
     border-top: 5px solid #00bff3;
     border-bottom: 5px solid #00bff3;
+    background-image: url(../img/lil-bluedots.png);
 }
