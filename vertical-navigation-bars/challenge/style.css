@@ -1,0 +1,40 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Varta", serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    border-right: 5px solid #0966C2;
+    width: 30%;
+    height: 100vh;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0966C2;
+    display: block;
+    padding: 1rem;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #0966C2;
+}
+
+nav a:hover i {
+    color: #F3BA64;
+}
