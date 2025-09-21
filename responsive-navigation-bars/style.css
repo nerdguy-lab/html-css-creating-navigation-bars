@@ -23,15 +23,31 @@ body {
 }
 
 nav {
-    border-bottom: 3px solid #00bff3;
+    /* border-bottom: 3px solid #00bff3;
     border-top: 3px solid #00bff3;
-    margin: 1rem auto;
+    margin: 1rem auto; */
     background-color: #eee;
     background-image: url(/img/lil-graydots.png);
     padding: 1rem;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* Positioning the close button and navbar */
     display: flex;
     justify-content: space-between;
     text-align: center;
+
+    /* Animate slide up and down */
+    transform: translateY(-100%);
+    transition: transform 0.2s ease;
+}
+
+nav:target {
+    transform: translateY(0);
 }
 
 nav ul {
