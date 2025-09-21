@@ -1,0 +1,52 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Varta", serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    border-bottom: 5px solid #0966C2;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    font-size: 6rem;
+    padding: 0.5rem 1rem 0 1rem;
+    color: #0966C2;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0966C2;
+    display: block;
+    padding: 1rem;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #0966C2;
+}
+
+nav a:hover i {
+    color: #F3BA64;
+}
+
+nav span::before {
+    content: "\a";
+    white-space: pre;
+}
