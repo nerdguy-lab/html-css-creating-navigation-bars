@@ -23,9 +23,6 @@ body {
 }
 
 nav {
-    /* border-bottom: 3px solid #00bff3;
-    border-top: 3px solid #00bff3;
-    margin: 1rem auto; */
     background-color: #eee;
     background-image: url(/img/lil-graydots.png);
     padding: 1rem;
@@ -56,7 +53,9 @@ nav ul {
     list-style-type: none;
     font-size: 1.5rem;
     display: flex;
-    justify-content: center;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 nav a {
@@ -82,4 +81,34 @@ nav a:hover {
     color: #FF583D;
     background-color: #c5e5ed;
     background-image: url("/img/lil-bluedots.png");
+}
+
+.close:hover {
+    background-image: none;
+    background-color: transparent;
+}
+
+@media (min-width: 750px) {
+    header {
+        margin: 1rem auto;
+    }
+
+    nav {
+        border-bottom: 3px solid #00bff3;
+        border-top: 3px solid #00bff3;
+        padding: 0;
+        position: static;
+        height: auto;
+        transform: translateY(0);
+    }
+
+    .hamburger,
+    .close {
+        display: none;
+    }
+
+    nav ul {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
 }
